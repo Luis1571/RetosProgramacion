@@ -10,16 +10,16 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  *
  *
- */
-
+ 
+*/
 for (var index = 1; index <= 100; index++) {
-    if(index%3==0){
-        console.log('fizz')
-    } if (index % 5 == 0) { 
-          console.log('buzz')
-    } if (index % 5 == 0 && index % 3 == 0) { 
+    if (index % 5 == 0 && index % 3 == 0) { 
         console.log('fizzbuzz')
-    }
+    }else if(index%3==0){
+        console.log('fizz')
+    } else if (index % 5 == 0) { 
+          console.log('buzz')
+    } 
     else { console.log(index); }
 
 }
